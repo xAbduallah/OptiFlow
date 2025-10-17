@@ -12,7 +12,7 @@ export const ServiceCard = ({
   icon: StaticImageData;
   title: string;
   description: string;
-  id: string;
+  id?: string;
   featured?: boolean;
   moreInfo?: boolean;
 }) => {
