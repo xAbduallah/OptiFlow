@@ -1,0 +1,42 @@
+{
+  "name": "Optiflow - Enterprise Solutions & ERP Systems",
+  "short_name": "Optiflow",
+  "description": "Comprehensive ERP solutions powered by Frappe and ERPNext for business growth and digital transformation",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0F0E2C",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/apple-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "productivity", "finance"],
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "screenshots": [
+    {
+      "src": "/images/hero.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "label": "Optiflow Dashboard"
+    }
+  ]
+}

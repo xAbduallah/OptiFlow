@@ -1,0 +1,33 @@
+<svg width="744" height="381" viewBox="0 0 744 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_9852_2450)">
+<path d="M368.092 50.0083C169.123 51.5983 80 275 80 275H659C659 275 567.06 48.4183 368.092 50.0083Z" fill="#CBD6FB"/>
+</g>
+<g filter="url(#filter1_f_9852_2450)">
+<path d="M368.915 92.0046C215.651 92.8809 147 216 147 216H593C593 216 522.179 91.1283 368.915 92.0046Z" fill="#CEEDF9" fill-opacity="0.5"/>
+</g>
+<g filter="url(#filter2_d_9852_2450)">
+<path d="M370.186 119.008C113.829 120.563 -1 339 -1 339H745C745 339 626.542 117.453 370.186 119.008Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_f_9852_2450" x="30" y="0" width="679" height="325" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_9852_2450"/>
+</filter>
+<filter id="filter1_f_9852_2450" x="122" y="67" width="496" height="174" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12.5" result="effect1_foregroundBlur_9852_2450"/>
+</filter>
+<filter id="filter2_d_9852_2450" x="-51" y="61" width="846" height="320" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-8"/>
+<feGaussianBlur stdDeviation="25"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.2 0 0 0 0 0.2 0 0 0 0 0.2 0 0 0 0.07 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_9852_2450"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_9852_2450" result="shape"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,486 @@
+{
+  "Global": {
+    "NotFound": {
+      "title": "404 - Page Not Found",
+      "heading": "Oops! We Can't Find That Page",
+      "description": "The page you're looking for doesn't exist or has been moved. Let's get you back on track.",
+      "goHome": "Back to Home",
+      "contactSupport": "Contact Support"
+    },
+    "Header": {
+      "title": "Home",
+      "about": "About",
+      "home": "Home",
+      "services": "Services",
+      "solution": "Solution",
+      "frappe": "Frappe",
+      "products": "Products",
+      "contact": "Contact Us",
+      "demo": "Request Demo",
+      "servicesDropdown": {
+        "automationFlow": "Automation Flow",
+        "integrationService": "Integration Service",
+        "customDevelopment": "Custom Development",
+        "hostingDevelopment": "Hosting and Development"
+      },
+      "solutionDropdown": {
+        "restaurant": "Restaurant",
+        "construction": "Construction",
+        "industrial-automation": "Industrial Automation",
+        "hospital-management": "Hospital Management",
+        "concrete-management": "Concrete Management",
+        "pos": "Point of Sale (POS)",
+        "fashion-management": "Fashion Management",
+        "shipping-management": "Shipping Management"
+      },
+      "frappeDropdown": {
+        "erpNext": "Frappe ERP Next",
+        "hrManagement": "Frappe HR Management",
+        "manufacturing": "Frappe Manufacturing",
+        "education": "Frappe Education",
+        "construction": "Frappe Contraction",
+        "healthcare": "ERP Next for healthcare"
+      },
+      "productsDropdown": {
+        "salesForce": "Sales Force Automation",
+        "hrServices": "HR Services App",
+        "ksaCompliance": "KSA Compliance"
+      }
+    },
+    "ContactUs": {
+      "title": "Contact us",
+      "heading": "Start Your Journey Toward Smarter Business Operations Today",
+      "description": "Whether you have a question, a project in mind, or need expert advice — our team is here to help. Reach out and discover how OptiFlow can support your success.",
+      "emailPlaceholder": "Email Address",
+      "companyPlaceholder": "Company Name",
+      "phonePlaceholder": "Phone Number",
+      "submitButton": "Get Started"
+    },
+    "Banner": {
+      "title": "Push your business to the next level Now .",
+      "description": "End-to-end workflow automation and operational control in one platform. Meet the solution built to optimize, scale, and simplify your business.",
+      "ctaButton": "Request a demo"
+    },
+    "Demo": {
+      "heading": "Experience the Power of Smart Business Automation",
+      "description": "See how OptiFlow transforms your operations into a seamless, efficient, and connected system designed to help your business grow faster.",
+      "form": {
+        "title": "Request Your Demo.",
+        "subtitle": "Provide your details to book your personalized demo with our team.",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "company": "Company",
+        "services": "Services",
+        "submit": "Submit",
+        "serviceOptions": {
+          "placeholder": "Select a service",
+          "healthcare": "Frappe HealthCare",
+          "erpnext": "Frappe ERPNext",
+          "hr": "Frappe HR",
+          "customDevelopment": "Custom Development"
+        }
+      }
+    },
+    "Footer": {
+      "brandName": "OptiFlow",
+      "description": "Simple innate summer fat appear basket his desire joy.",
+      "navigation": {
+        "title": "OptiFlow",
+        "home": "Home",
+        "services": "Services",
+        "solution": "Solution",
+        "frappe": "Frappe",
+        "products": "Products",
+        "contact": "Contact"
+      },
+      "contactUs": {
+        "title": "Contact US",
+        "phone": "+0208889255795",
+        "address": "second state- second district -5th tagamo3",
+        "email": "optiflow@gmail.com"
+      },
+      "newsletter": {
+        "title": "Join Our Newsletter",
+        "emailPlaceholder": "Your email address",
+        "subscribeButton": "Subscribe",
+        "description": "Will send you weekly updates for your better Experience"
+      },
+      "copyright": "Copyright @ AR Shakir 2022. All Rights Reserved.",
+      "poweredBy": "Powered By OptiFlow"
+    }
+  },
+  "LandingPage": {
+    "Hero": {
+      "subtitle": "Product Growth Solution in a Unified Platform",
+      "title": "Managing business operations has never been easier",
+      "description": "Optimize your workflow, automate processes, and drive smarter decisions with OptiFlow — the all-in-one platform built for growth.",
+      "formLabel": "Register for a demo using email address",
+      "emailPlaceholder": "Enter your email address",
+      "emailDescription": "Enter your email address to request a demo",
+      "submitButton": "Request Demo",
+      "submittingButton": "Requesting...",
+      "features": {
+        "insights": "Real-Time Insights",
+        "automation": "Powerful Automation"
+      }
+    },
+    "AboutUs": {
+      "businessesGrowing": "Over 72+ Software Businesses Growing With OptiFlow",
+      "sectionTitle": "ABOUT US",
+      "heading": "Empowering Businesses Through Smart Automation",
+      "description": "We empower businesses to streamline operations, automate workflows, and make smarter decisions — all from a unified, intuitive platform.",
+      "getStartedButton": "Get Started"
+    },
+    "Frappe": {
+      "sectionTitle": "Frappe Framework",
+      "heading": "Built on Frappe, Tailored for Every Industry",
+      "description": "OptiFlow leverages the power of the Frappe framework to deliver flexible, scalable, and industry-specific solutions — from retail and construction to healthcare, logistics, and beyond.",
+      "readMore": "Read More",
+      "modules": {
+        "erpnext": {
+          "title": "Frappe ERP Next",
+          "description": "ERPNext, built on the powerful Frappe framework, offers a fully customizable, open-source ERP system that adapts to your business — from accounting to HR, projects, inventory, and beyond."
+        },
+        "hrManagement": {
+          "title": "Frappe HR Management",
+          "description": "From onboarding to payroll, our HR app centralizes every HR task in one smart system — saving time, reducing errors, and giving your team the experience they deserve."
+        },
+        "manufacturing": {
+          "title": "Frappe Manufacturing",
+          "description": "Frappe's Manufacturing module streamlines production planning, BOMs, work orders, inventory, and quality control — giving manufacturers full visibility and control across their entire production cycle."
+        },
+        "construction": {
+          "title": "Frappe Contraction",
+          "description": "Frappe for Construction helps manage projects, materials, contractors, billing, and progress tracking — offering a unified system to streamline operations from site planning to project handover."
+        },
+        "healthcare": {
+          "title": "ERPNext for healthcare",
+          "description": "ERPNext for Healthcare manages patients, appointments, billing, inventory, and labs — streamlining hospital workflows and improving care quality."
+        },
+        "education": {
+          "title": "Frappe Education",
+          "description": "Frappe's education module helps you manage students, courses, assessments, and admissions all in one platform designed for schools, universities, and training centers to operate efficiently."
+        }
+      }
+    },
+    "Services": {
+      "sectionTitle": "OUR SERVICES",
+      "heading": "Transforming Operations Through Intelligent Solutions",
+      "description": "From intelligent automation to real-time analytics, OptiFlow delivers a suite of integrated services designed to streamline your operations, boost productivity, and scale with your business needs.",
+      "readMore": "Read More",
+      "services": {
+        "automationFlow": {
+          "title": "Automation Flow",
+          "description": "Build intelligent automation flows — with or without AI — to orchestrate end-to-end business processes. Customize each step, define triggers, and ensure seamless execution tailored to your operational goals."
+        },
+        "integrationService": {
+          "title": "Integration Service",
+          "description": "Connect all your systems into one smart ecosystem. Our integration services streamline data flow, automate key processes, and eliminate manual tasks — empowering your business to move faster and grow smarter."
+        },
+        "customDevelopment": {
+          "title": "Custom Development",
+          "description": "We develop custom software, websites, and apps designed to solve real business problems — delivering smart features that simplify tasks, boost speed, and enhance productivity across your entire workflow."
+        },
+        "hostingDevelopment": {
+          "title": "Hosting and Development",
+          "description": "We offer secure, scalable hosting and deployment for your applications — including cloud, self-hosted, and managed options — with expert setup, ongoing support, and seamless performance tailored to your needs."
+        }
+      }
+    },
+    "Grow": {
+      "heading": "Join with our Family and see how businesses grow with Pick time",
+      "description": "Discover how businesses achieve measurable results using OptiFlow's automation tools — from increased outreach and bookings to higher productivity and engagement across every stage of their operations.",
+      "statistics": {
+        "projects": {
+          "number": "50",
+          "description": "Projects we have Development"
+        },
+        "experience": {
+          "number": "24",
+          "description": "Years of Experience"
+        },
+        "users": {
+          "number": "3.4M",
+          "description": "Users have benefit of our services"
+        },
+        "partners": {
+          "number": "75",
+          "description": "Our Company Partners"
+        }
+      }
+    },
+    "Products": {
+      "sectionTitle": "our Products",
+      "heading": "Purpose-Built Tools for Modern Businesses",
+      "description": "From intelligent automation to custom integrations, our product suite is built to simplify complex operations, drive efficiency, and support your growth — no matter your industry or team size.",
+      "cta": "Explore our Product",
+      "products": {
+        "salesForce": {
+          "header": "Sales Force Automation",
+          "title": "Empower Your Sales Team to be Smarter, Faster",
+          "description": "Our Sales Force Automation app gives your team the tools to manage leads, follow up effortlessly, and convert opportunities into results — all from a single, intuitive platform."
+        },
+        "hrServices": {
+          "header": "HR Services App",
+          "title": "Simplify HR Management and Empower Your People",
+          "description": "From onboarding to payroll, our HR app centralizes every HR task in one smart system — saving time, reducing errors, and giving your team the experience they deserve."
+        },
+        "ksaCompliance": {
+          "header": "KSA Compliance",
+          "title": "Ensure Full Compliance with Saudi Regulations",
+          "description": "Stay aligned with KSA laws — including ZATCA, GOSI, and HRSD — through automated updates, localized processes, and built-in checks designed for confident, compliant business operations in Saudi Arabia."
+        }
+      }
+    },
+    "Solutions": {
+      "sectionTitle": "OUR SOLUTION",
+      "heading": "Tailored Solutions for Every Business Challenge",
+      "description": "From workflow automation to regulatory compliance, OptiFlow delivers scalable solutions designed to solve real-world problems — empowering teams to operate smarter, faster, and more efficiently across every department.",
+      "solutions": {
+        "restaurant": {
+          "title": "Restaurant",
+          "description": "Manage orders, inventory, staff, and billing in one system — built to streamline daily restaurant operations and enhance customer service."
+        },
+        "construction": {
+          "title": "Construction",
+          "description": "Manage projects, schedules, costs, and resources in one platform — built to streamline construction workflows and track progress at every stage."
+        },
+        "industrial-automation": {
+          "title": "Industrial Automation",
+          "description": "Automate production, manage inventory, and track performance a smart solution for optimizing industrial operations and ensuring efficiency across every stage."
+        },
+        "hospital-management": {
+          "title": "Hospital Management",
+          "description": "Manage appointments, patients, staff, and billing in one platform — built to streamline hospital operations and ensure quality care delivery."
+        },
+        "concrete-management": {
+          "title": "Concrete Management",
+          "description": "Manage concrete orders, delivery, mix designs, and billing all in one platform built to streamline operations and improve construction accuracy."
+        },
+        "pos": {
+          "title": "Point of Sale (POS)",
+          "description": "Simplify in-store sales with a smart POS — manage products, payments, inventory, and receipts in one fast, reliable system."
+        },
+        "fashion-management": {
+          "title": "Fashion Management",
+          "description": "Manage products, inventory, sizes, and orders — an all-in-one solution built to streamline fashion retail and apparel business operations."
+        },
+        "shipping-management": {
+          "title": "Shipping Management",
+          "description": "Track shipments, manage deliveries, and optimize routes — a complete solution to streamline logistics and ensure faster, more reliable shipping operations."
+        }
+      }
+    }
+  },
+  "SoftwarePage": {
+    "hero": {
+      "title": "Custom Software Development That Drives Your",
+      "titleHighlight": "Business Forward",
+      "description": "We build fully tailored software solutions to match your unique business needs from websites and apps to integrated systems that support growth and boost operational efficiency.",
+      "ctaButton": "Start your Journey"
+    },
+    "service": {
+      "sectionTitle": "our Services",
+      "heading": "Transforming Operations Through Intelligent Solutions",
+      "description": "From intelligent automation to real-time analytics, OptiFlow delivers a suite of integrated services designed to streamline your operations, boost productivity, and scale with your business needs.",
+      "ctaButton": "Request a Service",
+      "readMore": "Read More",
+      "services": {
+        "backendIntegration": {
+          "title": "Backend Integration and Micro Services",
+          "description": "Build intelligent automation flows — with or without AI — to orchestrate end-to-end business processes. Customize each step, define triggers, and ensure seamless execution tailored to your operational goals."
+        },
+        "frontend": {
+          "title": "Front End",
+          "description": "Connect all your systems into one smart ecosystem. Our integration services streamline data flow, automate key processes, and eliminate manual tasks — empowering your business to move faster and grow smarter."
+        },
+        "mobileApp": {
+          "title": "Mobile APP Dev",
+          "description": "We develop custom software, websites, and apps designed to solve real business problems — delivering smart features that simplify tasks, boost speed, and enhance productivity across your entire workflow."
+        },
+        "uiUxDesign": {
+          "title": "Ui Ux Design",
+          "description": "We offer secure, scalable hosting and deployment for your applications — including cloud, self-hosted, and managed options — with expert setup, ongoing support, and seamless performance tailored to your needs."
+        }
+      }
+    },
+    "projects": {
+      "sectionTitle": "our Projects",
+      "heading": "Powering the Future of Project Excellence",
+      "description": "Designed for businesses that demand precision, OptiFlow unites strategy, execution, and reporting into one seamless platform so teams stay aligned, deadlines are met, and growth never stops.",
+      "items": {
+        "veela": {
+          "title": "Veela Beauty e-commerce",
+          "description": "A custom-built beauty e-commerce website tailored for the MENA market, featuring smart filtering, dynamic product pages, multi-brand support, and seamless checkout experience."
+        },
+        "slktves": {
+          "title": "SLKTVES Marketing Agency",
+          "description": "SLKTVES is a service-focused website built for a marketing agency, showcasing its branding, SEO, media production, and creative services through a modern"
+        },
+        "vitalRoots": {
+          "title": "VITAL ROOTS e-commerce",
+          "description": "Our Sales Force Automation app gives your team the tools to manage leads, follow up effortlessly, and convert opportunities into results  all from a single, intuitive platform."
+        },
+        "nourish": {
+          "title": "Nourish Brand website",
+          "description": "Our Sales Force Automation app gives your team the tools to manage leads, follow up effortlessly, and convert opportunities into results  all from a single, intuitive platform."
+        },
+        "clinifix": {
+          "title": "Clinifix Brand website",
+          "description": "Our Sales Force Automation app gives your team the tools to manage leads, follow up effortlessly, and convert opportunities into results  all from a single, intuitive platform."
+        }
+      }
+    }
+  },
+  "ProductsPage": {
+    "hero": {
+      "heading": "Empower Your Sales Team to be Smarter, Faster With",
+      "badge": "SFA App",
+      "description": "Our Sales Force Automation app gives your team the tools to manage leads, follow up effortlessly, and convert opportunities into results — all from a single, intuitive platform.",
+      "ctaButton": "Start your Journey",
+      "contactButton": "Contact Us"
+    },
+    "appFeature": {
+      "sectionTitle": "APP Feature",
+      "heading": "Track, Optimize, Analyze Your Sales Efficiently",
+      "description": "Empower your team with live tracking, optimized routes, performance dashboards, and data-driven insights to boost efficiency and grow sales.",
+      "features": {
+        "liveTracking": {
+          "title": "Live Tracking & Geo-Fencing",
+          "description": "Track sales teams and vehicles in real time while ensuring they remain within assigned zones."
+        },
+        "routeOptimization": {
+          "title": "Route & Visit Optimization",
+          "description": "Plan sales routes and visit points efficiently to save time and cover more customers."
+        },
+        "customerVerification": {
+          "title": "Customer Verification Reports",
+          "description": "Generate coverage reports matching customer locations with visits to ensure visit accuracy."
+        },
+        "visitScheduling": {
+          "title": "Visit Scheduling & Collections",
+          "description": "Schedule visits and manage collections efficiently to improve cash flow and reduce delays."
+        },
+        "salesDocuments": {
+          "title": "Sales Documents Management",
+          "description": "Create and manage orders, invoices, returns, and quotations with accurate, print-ready formats."
+        },
+        "stockPricelist": {
+          "title": "Stock & Pricelist Management",
+          "description": "Keep your team updated with real-time stock and accurate pricing for every customer."
+        },
+        "customerContact": {
+          "title": "Customer Contact Access",
+          "description": "Provide sales reps instant customer contact details for faster communication in the field."
+        },
+        "salespersonDashboard": {
+          "title": "Salesperson Dashboard",
+          "description": "Unified dashboard for daily activities, orders, visits, van sales, and team management."
+        },
+        "salesTargets": {
+          "title": "Sales Targets & Performance Tracking",
+          "description": "Track team performance against targets and measure achievements to boost motivation."
+        },
+        "advancedAnalytics": {
+          "title": "Advanced Analytics & Dashboards",
+          "description": "Gain insights on sales performance, top products, visit coverage, productivity, and collections."
+        },
+        "offlineSyncing": {
+          "title": "Offline Syncing",
+          "description": "Keep sales running offline, syncing all data automatically when internet connection is restored."
+        },
+        "accessibilityCustomization": {
+          "title": "Accessibility & Customization",
+          "description": "Customize themes, languages, and permissions to tailor the app experience to your team."
+        }
+      }
+    }
+  },
+  "FrappePage": {
+    "Hero": {
+      "heading": "Transform Healthcare Management with Smart, Unified Control",
+      "description": "Simplify hospital operations, manage patients, billing, and labs, and deliver better care — all in one integrated ERPNext platform built on Frappe.",
+      "primaryButton": "Start Your Journey",
+      "secondaryButton": "View Free Demo"
+    },
+    "OurTarget": {
+      "sectionTitle": "OUR Target",
+      "heading": "Core Objectives of the Healthcare Module",
+      "description": "Designed to improve efficiency, reduce manual work, and elevate patient satisfaction across every hospital department.",
+      "services": {
+        "streamlinedPatientExperience": {
+          "title": "Streamlined Patient Experience",
+          "description": "Simplify every step of the patient journey — from appointment booking to discharge — ensuring faster service and better coordination between departments."
+        },
+        "accurateCentralizedData": {
+          "title": "Accurate and Centralized Data",
+          "description": "Digitize patient records, prescriptions, and reports in one secure system to reduce errors, improve accuracy, and support better clinical decisions."
+        },
+        "improvedOperationalEfficiency": {
+          "title": "Improved Operational Efficiency",
+          "description": "Automate daily hospital workflows like billing, scheduling, and inventory tracking to save time, lower costs, and increase productivity."
+        },
+        "enhancedFinancialControl": {
+          "title": "Enhanced Financial and Regulatory Control",
+          "description": "Maintain compliance with medical regulations while achieving full financial transparency through automated audits, payment tracking, and reporting tools."
+        }
+      }
+    },
+    "Features": {
+      "sectionTitle": "Features",
+      "heading": "Core Features of ERPNext for Healthcare",
+      "description": "Each feature is designed to simplify medical operations, support data accuracy, and enable hospitals to work smarter every day.",
+      "features": {
+        "appointmentScheduling": {
+          "title": "Appointment Scheduling",
+          "description": "Manage doctors' schedules, appointments, and patient visits efficiently in one place.",
+          "goalsTitle": "Goals:",
+          "goals": "Reduce waiting times and double bookings\nEnable automated reminders and rescheduling",
+          "importanceTitle": "Why It's Important:",
+          "importance": "Improves patient satisfaction and maximizes clinic utilization."
+        },
+        "patientManagement": {
+          "title": "Patient Management",
+          "description": "Centralize patient profiles, clinical notes, and medical histories in a unified database.",
+          "goalsTitle": "Goals:",
+          "goals": "Provide instant access to patient information\nEnhance collaboration between departments",
+          "importanceTitle": "Why It's Important:",
+          "importance": "Ensures better continuity of care and informed medical decisions."
+        },
+        "laboratoryManagement": {
+          "title": "Laboratory Management",
+          "description": "Digitally manage lab test orders, samples, and reports with full traceability.",
+          "goalsTitle": "Goals:",
+          "goals": "Speed up lab result turnaround\nEliminate paper-based errors",
+          "importanceTitle": "Why It's Important:",
+          "importance": "Boosts accuracy, accountability, and patient trust in diagnostics."
+        },
+        "pharmacyInventory": {
+          "title": "Pharmacy and Inventory",
+          "description": "Track medicines, consumables, and expiry dates within an integrated stock system.",
+          "goalsTitle": "Goals:",
+          "goals": "Prevent stockouts and over-purchasing\nSync pharmacy billing with patient invoices",
+          "importanceTitle": "Why It's Important:",
+          "importance": "Ensures accurate medication management and reduces financial loss."
+        },
+        "billingAccounting": {
+          "title": "Billing and Accounting",
+          "description": "Automate invoicing, payment tracking, and expense management in real time.",
+          "goalsTitle": "Goals:",
+          "goals": "Simplify patient billing and insurance claims\nMaintain full audit trails and reports",
+          "importanceTitle": "Why It's Important:",
+          "importance": "Guarantees financial transparency and minimizes administrative delays."
+        },
+        "reportingAnalytics": {
+          "title": "Reporting and Analytics",
+          "description": "Generate dashboards and reports for operations, finance, and performance tracking.",
+          "goalsTitle": "Goals:",
+          "goals": "Monitor hospital KPIs in real time\nSupport management with actionable insights",
+          "importanceTitle": "Why It's Important:",
+          "importance": "Empowers data-driven decision-making and continuous improvement."
+        }
+      }
+    }
+  }
+}

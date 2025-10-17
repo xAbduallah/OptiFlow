@@ -1,0 +1,135 @@
+version: '3.8'
+
+services:
+  optiflow:
+    image: node:22-alpine
+    container_name: optiflow-web
+    restart: unless-stopped  # Better than on-failure for production
+    working_dir: /app
+    # Optimized production build command
+    command: >
+      sh -lc '
+        if [ ! -f package.json ]; then
+          echo "🚨 package.json not found in /app"; ls -al /app; exit 1; fi &&
+        echo "📦 Installing pnpm globally..." &&
+        npm install -g pnpm@latest &&
+        echo "🔧 Configuring pnpm for production..." &&
+        pnpm config set enable-pre-post-scripts true &&
+        pnpm config set store-dir /tmp/.pnpm-store &&
+        echo "📝 Installing dependencies..." &&
+        pnpm install --frozen-lockfile --production=false &&
+        echo "🏗️ Building application for production..." &&
+        pnpm run build &&
+        echo "🧹 Pruning dev dependencies..." &&
+        pnpm prune --production &&
+        echo "🔍 Verifying build output..." &&
+        ls -la .next/ && ls -la public/ &&
+        echo "🚀 Starting production server..." &&
+        echo "📋 Verifying start script..." &&
+        grep -A 5 -B 5 '"start"' package.json || echo "Could not find start script" &&
+        exec pnpm run start
+      '
+    environment:
+      # Core Next.js production settings
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+      
+      # Performance & Security
+      - NEXT_TELEMETRY_DISABLED=1
+      - CI=true
+      - NODE_OPTIONS=--max-old-space-size=2048
+      - NEXT_SHARP=0
+      
+      # Production optimizations
+      - FORCE_COLOR=0
+      - NPM_CONFIG_UPDATE_NOTIFIER=false
+      - NPM_CONFIG_FUND=false
+      - NPM_CONFIG_AUDIT=false
+      
+      # Timezone (adjust as needed)
+      - TZ=UTC
+    
+    volumes:
+      - './:/app'
+      - './data:/data'
+      # Cache volumes for better performance
+      - 'node_modules_cache:/app/node_modules'
+      - 'pnpm_cache:/tmp/.pnpm-store'
+    
+    # Resource limits for production
+    deploy:
+      resources:
+        limits:
+          memory: 2G
+          cpus: '1.0'
+        reservations:
+          memory: 512M
+          cpus: '0.25'
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    
+    expose:
+      - "3000"
+    
+    networks:
+      - portainer_default
+    
+    labels:
+      - "traefik.enable=true"
+      
+      # HTTP -> HTTPS redirect
+      - "traefik.http.routers.optiflow-http.rule=Host(`optiflowsys.com`)"
+      - "traefik.http.routers.optiflow-http.entrypoints=web"
+      - "traefik.http.routers.optiflow-http.middlewares=optiflow-redirect"
+      - "traefik.http.middlewares.optiflow-redirect.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.optiflow-redirect.redirectscheme.permanent=true"
+      
+      # HTTPS router with security headers
+      - "traefik.http.routers.optiflow.rule=Host(`optiflowsys.com`)"
+      - "traefik.http.routers.optiflow.entrypoints=websecure"
+      - "traefik.http.routers.optiflow.tls=true"
+      - "traefik.http.routers.optiflow.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.optiflow.middlewares=optiflow-headers,optiflow-compress"
+      
+      # Security headers middleware
+      - "traefik.http.middlewares.optiflow-headers.headers.frameDeny=true"
+      - "traefik.http.middlewares.optiflow-headers.headers.contentTypeNosniff=true"
+      - "traefik.http.middlewares.optiflow-headers.headers.browserXssFilter=true"
+      - "traefik.http.middlewares.optiflow-headers.headers.referrerPolicy=strict-origin-when-cross-origin"
+      - "traefik.http.middlewares.optiflow-headers.headers.customRequestHeaders.X-Forwarded-Proto=https"
+      
+      # Compression middleware
+      - "traefik.http.middlewares.optiflow-compress.compress=true"
+      
+      # Service configuration
+      - "traefik.http.routers.optiflow.service=optiflow"
+      - "traefik.http.services.optiflow.loadbalancer.server.port=3000"
+      - "traefik.http.services.optiflow.loadbalancer.healthcheck.path=/"
+      - "traefik.http.services.optiflow.loadbalancer.healthcheck.interval=30s"
+      - "traefik.http.services.optiflow.loadbalancer.healthcheck.timeout=10s"
+      
+      # Network
+      - "traefik.docker.network=portainer_default"
+      
+      # Container metadata
+      - "com.docker.compose.project=optiflow"
+      - "com.docker.compose.service=optiflow"
+
+# Volumes for caching
+volumes:
+  node_modules_cache:
+    driver: local
+  pnpm_cache:
+    driver: local
+
+networks:
+  portainer_default:
+    external: true

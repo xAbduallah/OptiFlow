@@ -1,0 +1,45 @@
+# Optiflow - Enterprise Solutions
+# https://optiflow.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Directories
+Allow: /en/
+Allow: /ar/
+Allow: /products/
+Allow: /software-service/
+Allow: /images/
+
+# Disallow admin or internal pages (adjust as needed)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Sitemaps
+Sitemap: https://optiflow.com/sitemap.xml
+Sitemap: https://optiflow.com/sitemap-en.xml
+Sitemap: https://optiflow.com/sitemap-ar.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 0
+
+# Specific rules for different bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
